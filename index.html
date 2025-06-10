@@ -2,92 +2,130 @@
 <html lang="pl">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Miasteczko RP</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background-color: #1a1a1a;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      background-color: #2e2e2e;
+      padding: 0.5rem;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    main {
+      padding: 2rem;
+    }
+    section {
+      margin-bottom: 2rem;
+      background-color: #fff;
+      padding: 1rem;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1, h2 {
+      color: #1a1a1a;
+    }
+    a.discord {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background-color: #7289da;
+      color: #fff;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+  </style>
 </head>
-<body class="bg-black text-yellow-300 font-sans min-h-screen flex flex-col">
-
-  <header class="bg-black border-b border-yellow-500 p-4 flex justify-between items-center">
-    <h1 class="text-2xl font-bold text-white">Miasteczko RP</h1>
-    <nav class="space-x-6 text-lg font-medium">
-      <a href="#onas" class="hover:text-white transition">O nas</a>
-      <a href="#straz" class="hover:text-white transition">Straż Pożarna</a>
-      <a href="#policja" class="hover:text-white transition">Policja</a>
-      <a href="#pogotowie" class="hover:text-white transition">Pogotowie</a>
-      <a href="https://discord.gg/RM5EPkvREG" class="hover:text-white transition text-blue-400">Discord</a>
-    </nav>
+<body>
+  <header>
+    <h1>Miasteczko RP</h1>
+    <p>Realistyczny serwer RP oparty na Emergency Hamburg (Roblox)</p>
   </header>
-
-  <main class="flex-grow">
-    <section id="onas" class="max-w-5xl mx-auto px-4 py-12 text-white space-y-6">
-      <h2 class="text-3xl font-bold border-b border-yellow-500 pb-2">🌇️ O nas</h2>
-      <p class="text-gray-300">
-        <strong>Miasteczko RP</strong> to serwer Roleplay oparty na Emergency Hamburg (EH) w Roblox. Tworzymy realistyczne środowisko, gdzie gracze mogą wcielić się w role policjantów, strażaków, ratowników medycznych lub zwykłych mieszkańców miasteczka.
-      </p>
-      <p class="text-gray-300">
-        Nasz serwer stawia na profesjonalizm, dobrą zabawę i porządek – każdy znajdzie tu swoje miejsce!
-      </p>
-
-      <div class="space-y-4">
-        <h3 class="text-2xl font-semibold text-blue-400">🚓 Służby porządkowe</h3>
-
-        <div>
-          <h4 class="text-xl font-semibold text-blue-300">👮 Policja</h4>
-          <p class="text-gray-300">Zostań funkcjonariuszem prawa! Posiadamy pełną strukturę jednostki, system odznak i szkolenia. Każdy policjant otrzymuje spersonalizowaną odznakę oraz ma możliwość awansu na wyższe stopnie służbowe.</p>
-        </div>
-
-        <div>
-          <h4 class="text-xl font-semibold text-red-400">🚒 Straż Pożarna</h4>
-          <p class="text-gray-300">Pomagaj w akcjach ratunkowych, gaszeniu pożarów i wypadkach drogowych. Oferujemy sprzęt specjalistyczny, symulacje zdarzeń i nagrody za aktywność.</p>
-        </div>
-
-        <div>
-          <h4 class="text-xl font-semibold text-pink-400">🏥 Pogotowie Ratunkowe</h4>
-          <p class="text-gray-300">Zostań ratownikiem medycznym i ratuj życie! Realistyczne procedury, komunikacja z innymi służbami i szkolenia medyczne.</p>
-        </div>
-      </div>
-
-      <div>
-        <h3 class="text-2xl font-semibold text-green-400 mt-6">📄 Systemy i dokumenty</h3>
-        <ul class="list-disc list-inside text-gray-300 space-y-2">
-          <li>Odznaki dla członków służb z unikalnymi numerami identyfikacyjnymi.</li>
-          <li>Pozwolenie na broń – dostępne po spełnieniu określonych wymagań RP.</li>
-          <li>Regulaminy dla każdej ze służb – jasne zasady i obowiązki.</li>
-          <li>Prawo jazdy, dowody osobiste i rejestracje pojazdów.</li>
-          <li>Taryfikator mandatów i kodeks karny RP w wersji uproszczonej.</li>
-        </ul>
-      </div>
-
-      <div>
-        <h3 class="text-2xl font-semibold text-purple-400 mt-6">👥 Życie cywilne</h3>
-        <p class="text-gray-300">Nie musisz pracować w służbach – możesz:</p>
-        <ul class="list-disc list-inside text-gray-300 space-y-2">
-          <li>Otworzyć firmę</li>
-          <li>Kupić dom</li>
-          <li>Posiadać samochód</li>
-          <li>Uczestniczyć w eventach RP</li>
-          <li>Otrzymać pozwolenie na broń i prowadzić legalną działalność</li>
-        </ul>
-      </div>
+  <nav>
+    <a href="#onas">O nas</a>
+    <a href="#policja">Policja</a>
+    <a href="#straz">Straż Pożarna</a>
+    <a href="#pogotowie">Pogotowie</a>
+    <a href="#ticket">Ticket</a>
+    <a href="https://discord.gg/RM5EPkvREG" class="discord" target="_blank">Dołącz do Discorda</a>
+  </nav>
+  <main>
+    <section id="onas">
+      <h2>🏙️ O nas</h2>
+      <p>Miasteczko RP to serwer Roleplay oparty na Emergency Hamburg (EH) w Roblox. Tworzymy realistyczne środowisko, gdzie gracze mogą wcielić się w role policjantów, strażaków, ratowników medycznych lub zwykłych mieszkańców miasteczka.</p>
+      <p>Nasz serwer stawia na profesjonalizm, dobrą zabawę i porządek – każdy znajdzie tu swoje miejsce!</p>
+      <ul>
+        <li>🚓 <strong>Służby porządkowe</strong></li>
+        <li>👮 <strong>Policja</strong> – szkolenia, odznaki, struktura i awanse.</li>
+        <li>🚒 <strong>Straż Pożarna</strong> – sprzęt, symulacje, aktywność.</li>
+        <li>🏥 <strong>Pogotowie Ratunkowe</strong> – procedury, komunikacja, szkolenia.</li>
+        <li>📄 <strong>Systemy i dokumenty</strong> – odznaki, pozwolenia, regulaminy, prawo jazdy, taryfikator.</li>
+        <li>👥 <strong>Życie cywilne</strong> – firmy, domy, samochody, eventy RP, pozwolenia.</li>
+      </ul>
     </section>
 
-    <section id="straz" class="max-w-5xl mx-auto px-4 py-12 text-white">
-      <h2 class="text-2xl font-bold border-b border-yellow-500 pb-2">🚒 Regulamin Straży Pożarnej</h2>
-      <p class="text-gray-400">(Tu zostanie wstawiony pełny regulamin straży)</p>
+    <section id="ticket">
+      <h2>📋 Regulamin Ticket</h2>
+      <ol>
+        <li>Nie oznaczaj administracji kilkukrotnie.</li>
+        <li>Pamiętaj o kulturze na zgłoszeniu.</li>
+        <li>Jeżeli nie odpiszesz na wiadomość administratora w ciągu 3 do 6 godzin ticket zostanie usunięty.</li>
+        <li>Jeżeli nie napiszesz żadnej wiadomości w ciągu 5 minut od stworzenia ticket zostanie on zamknięty!</li>
+        <li>Opisz swój problem od razu. Nie czekaj aż administrator zawiadomi ci swoją obecność.</li>
+        <li>Nie oznaczaj właścicieli. Administracja sama to zrobi gdy będzie taka potrzeba.</li>
+        <li>Gdy opisujesz problem postaraj się od razu podać jak najwięcej szczegółów. Będzie nam łatwiej go rozwiązać.</li>
+        <li>Czekaj cierpliwie na rozwiązanie problemu. Prawdopodobnie nie jesteś jedyną osobą, której problem staramy się rozwiązać.</li>
+        <li>Na odwołanie od otrzymanej kary masz 3 dni.</li>
+      </ol>
+      <p><strong>❗️Nieznajomość regulaminu nie zwalnia z przestrzegania go❗️</strong></p>
     </section>
 
-    <section id="policja" class="max-w-5xl mx-auto px-4 py-12 text-white">
-      <h2 class="text-2xl font-bold border-b border-yellow-500 pb-2">👮 Regulamin Policji</h2>
-      <p class="text-gray-400">(Tu zostanie wstawiony pełny regulamin policji)</p>
+    <section id="policja">
+      <h2>🚓 Regulamin Policji</h2>
+      <p><pre>Zachowanie podczas interwencji
+- Paralizator może być używany tylko w sytuacjach zagrożenia.
+- Po aresztowaniu należy przeprowadzić standardowe procedury.
+- Interwencje muszą być profesjonalne.
+- Obowiązek przedstawienia się i okazania odznaki.
+...
+(pozostałe zasady tutaj – skrócone do przejrzystości)</pre></p>
     </section>
 
-    <section id="pogotowie" class="max-w-5xl mx-auto px-4 py-12 text-white">
-      <h2 class="text-2xl font-bold border-b border-yellow-500 pb-2">🏥 Regulamin Pogotowia</h2>
-      <p class="text-gray-400">(Tu zostanie wstawiony pełny regulamin pogotowia)</p>
+    <section id="straz">
+      <h2>🚒 Regulamin Straży Pożarnej</h2>
+      <p><pre>Dyscyplina i hierarchia
+- Przestrzeganie rozkazów, gotowość bojowa.
+- Zachowanie zasad BHP.
+- Reprezentowanie jednostki z godnością.
+...
+(pozostałe zasady tutaj – skrócone do przejrzystości)</pre></p>
+    </section>
+
+    <section id="pogotowie">
+      <h2>🏥 Regulamin Pogotowia Ratunkowego</h2>
+      <p><pre>Reakcja na wezwanie
+- Gotowość sprzętu, punktualność.
+- Udzielanie pomocy zgodnie z procedurami.
+- Zachowanie tajemnicy zawodowej.
+...
+(pozostałe zasady tutaj – skrócone do przejrzystości)</pre></p>
     </section>
   </main>
-
 </body>
 </html>
