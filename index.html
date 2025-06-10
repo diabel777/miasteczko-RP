@@ -5,18 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Miasteczko RP</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
 <body class="bg-gray-950 text-white font-sans">
 
+  <!-- Pasek górny -->
   <header class="bg-gray-900 shadow-md p-6 flex justify-between items-center">
     <h1 class="text-3xl font-bold">Miasteczko RP</h1>
     <a href="https://discord.gg/RM5EPkvREG" target="_blank" class="text-blue-400 hover:text-blue-300 font-semibold">Dołącz na Discord</a>
   </header>
 
+  <!-- Menu nawigacyjne -->
+  <nav class="bg-gray-800 text-gray-300 text-sm flex flex-wrap justify-center gap-6 py-3 border-b border-gray-700">
+    <a href="#straz" class="hover:text-yellow-400 transition">🚒 Straż</a>
+    <a href="#policja" class="hover:text-blue-400 transition">🚓 Policja</a>
+    <a href="#pogotowie" class="hover:text-red-400 transition">🚑 Pogotowie</a>
+    <a href="#cywile" class="hover:text-green-400 transition">🏙️ Cywile</a>
+    <a href="#zgloszenia" class="hover:text-gray-300 transition">📋 Zgłoszenia</a>
+    <a href="#grafika" class="hover:text-purple-400 transition">🎨 Grafika</a>
+  </nav>
+
+  <!-- Główna treść -->
   <main class="max-w-5xl mx-auto py-12 px-4 space-y-16">
 
-    <!-- Regulaminy frakcji -->
-    <section>
+    <!-- Straż Pożarna -->
+    <section id="straz">
       <h2 class="text-2xl font-semibold border-b border-yellow-500 pb-2 mb-4">🚒 Regulamin Straży Pożarnej</h2>
       <ul class="list-disc list-inside text-yellow-300 space-y-2">
         <li>Dyscyplina i hierarchia: Bezwzględne przestrzeganie rozkazów przełożonych.</li>
@@ -31,7 +48,8 @@
       </ul>
     </section>
 
-    <section>
+    <!-- Policja -->
+    <section id="policja">
       <h2 class="text-2xl font-semibold border-b border-blue-500 pb-2 mb-4">🚓 Regulamin Policji</h2>
       <ul class="list-disc list-inside text-blue-300 space-y-2">
         <li>Zachowanie podczas interwencji: Paralizator może być używany tylko w sytuacjach zagrożenia.</li>
@@ -51,7 +69,8 @@
       </ul>
     </section>
 
-    <section>
+    <!-- Pogotowie -->
+    <section id="pogotowie">
       <h2 class="text-2xl font-semibold border-b border-red-500 pb-2 mb-4">🚑 Regulamin Pogotowia</h2>
       <ul class="list-disc list-inside text-red-300 space-y-2">
         <li>Obowiązek natychmiastowej reakcji na wezwanie.</li>
@@ -66,8 +85,8 @@
       </ul>
     </section>
 
-    <!-- Sekcja działalności cywilnej -->
-    <section>
+    <!-- Cywile -->
+    <section id="cywile">
       <h2 class="text-2xl font-semibold border-b border-green-500 pb-2 mb-4">🏙️ Działalność cywilna i firmy</h2>
       <ul class="list-disc list-inside text-green-300 space-y-2">
         <li>Nie musisz należeć do żadnej frakcji, aby grać na serwerze.</li>
@@ -78,8 +97,8 @@
       </ul>
     </section>
 
-    <!-- Sekcja zgłoszeń -->
-    <section>
+    <!-- Zgłoszenia -->
+    <section id="zgloszenia">
       <h2 class="text-2xl font-semibold border-b border-gray-500 pb-2 mb-4">📋 Zasady Zgłoszeń na serwerze Miasteczko RP</h2>
       <ul class="list-decimal list-inside text-gray-300 space-y-2">
         <li>Nie oznaczaj administracji kilkukrotnie.</li>
@@ -88,20 +107,22 @@
         <li>Jeżeli nie napiszesz żadnej wiadomości w ciągu 5 minut od stworzenia, ticket zostanie zamknięty!</li>
         <li>Opisz swój problem od razu. Nie czekaj aż administrator zawiadomi ci swoją obecność.</li>
         <li>Nie oznaczaj właścicieli. Administracja sama to zrobi, gdy będzie taka potrzeba.</li>
-        <li>Gdy opisujesz problem, postaraj się od razu podać jak najwięcej szczegółów. Będzie nam łatwiej go rozwiązać.</li>
-        <li>Czekaj cierpliwie na rozwiązanie problemu. Prawdopodobnie nie jesteś jedyną osobą, której problem staramy się rozwiązać.</li>
+        <li>Gdy opisujesz problem, postaraj się od razu podać jak najwięcej szczegółów.</li>
+        <li>Czekaj cierpliwie na rozwiązanie problemu.</li>
         <li>Na odwołanie od otrzymanej kary masz 3 dni.</li>
       </ul>
       <p class="mt-4 text-red-400 font-semibold text-sm">❗️Nieznajomość regulaminu nie zwalnia z przestrzegania go❗️</p>
     </section>
 
-    <section>
+    <!-- Grafika -->
+    <section id="grafika">
       <h2 class="text-xl font-semibold text-gray-400">🎨 Grafika strony (w przygotowaniu)</h2>
       <p class="text-gray-500">Miejsce na grafikę zostanie uzupełnione jutro.</p>
     </section>
 
   </main>
 
+  <!-- Stopka -->
   <footer class="bg-gray-900 text-center text-sm text-gray-400 py-6">
     &copy; 2025 Miasteczko RP — Wszystkie prawa zastrzeżone
   </footer>
